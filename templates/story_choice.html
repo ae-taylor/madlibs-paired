@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Madlibs! {% endblock %}
+
+{% block content %}
+
+<form action = "/question">
+
+  <label for = "story_options">Choose a story:</label>
+    <select name = "stories">
+      <option value = "{{ silly_story_class }}">Silly story</option>
+      <option value = "{{ excited_story_class }}">Excited story</option>
+  </select>
+  <input type = "submit">
+</form>
+
+{% endblock %}
